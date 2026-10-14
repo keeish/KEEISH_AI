@@ -164,13 +164,13 @@
       </div>
       <div class="field">
         <label>Model ID</label>
-        <input type="text" id="modelId" placeholder="e.g. google/gemini-2.0-flash-001" autocomplete="off">
+        <input type="text" id="modelId" placeholder="e.g. nvidia/nemotron-3-ultra-550b-a55b" autocomplete="off">
       </div>
       <div class="field">
         <label>System Prompt</label>
         <textarea id="sysPrompt" placeholder="You are a helpful assistant…"></textarea>
       </div>
-      <div class="note">Get a free key at <b>openrouter.ai/keys</b>. Find model IDs at <b>openrouter.ai/models</b> — e.g. <b>google/gemini-2.0-flash-001</b>, <b>meta-llama/llama-3.3-70b-instruct</b>, <b>deepseek/deepseek-chat</b>. Saved only in your browser's localStorage.</div>
+      <div class="note">Get a free key at <b>openrouter.ai/keys</b>. Find model IDs at <b>openrouter.ai/models</b> — e.g. <b>nvidia/nemotron-3-ultra-550b-a55b</b>, <b>meta-llama/llama-3.3-70b-instruct</b>, <b>deepseek/deepseek-chat</b>. Saved only in your browser's localStorage.</div>
     </div>
     <div class="modal-foot">
       <button class="btn" id="clearSettings">Clear</button>
@@ -196,7 +196,7 @@ const S = {
 function loadSettings(){
   const s = S.get();
   $('apiKey').value = s.apiKey || '';
-  $('modelId').value = s.modelId || 'google/gemini-2.0-flash-001';
+  $('modelId').value = s.modelId || 'nvidia/nemotron-3-ultra-550b-a55b';
   $('sysPrompt').value = s.sysPrompt || 'You are KEEISH AI, a friendly, helpful and concise assistant. Always put code inside fenced code blocks with the language name, like ```python ... ```.';
   updateBadge();
 }
